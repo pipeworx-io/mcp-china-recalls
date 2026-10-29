@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-china-recalls",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "china-recalls: product recall announcements published by China's State Administration for Market Regulation (SAMR). Live per request, nothing stored.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-china-recalls": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "china-recalls"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-china-recalls.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/china-recalls",
   "pipeworx": {
-    "sourceHash": "v1-4dcaecb4e86c982137c138ac30e64fd75a612867c0d2232448a378119586ee5a",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "china-recalls",
+    "gatewaySlug": "china-recalls",
+    "sourceHash": "v1-895028518e004412416312810742cdcf25650355ce23f97c152919a7365ae4fa",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
