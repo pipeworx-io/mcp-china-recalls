@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-china-recalls",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "china-recalls: product recall announcements published by China's State Administration for Market Regulation (SAMR). Live per request, nothing stored.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "china-recalls",
     "gatewaySlug": "china-recalls",
-    "sourceHash": "v1-895028518e004412416312810742cdcf25650355ce23f97c152919a7365ae4fa",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-68b45e304ed5e0b3d996bfd54fe78b1d159e2642f0bfb30becf34f86a6bce910",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
